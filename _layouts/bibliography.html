@@ -1,0 +1,27 @@
+---
+---
+
+<a id="{{entry.key}}"></a>
+{{ reference }}
+<br>
+
+{% if entry.abstract %}
+<a class="btn btn-primary btn-info btn-xs" data-toggle="collapse" href="#{{entry.key}}_abstract" aria-expanded="false" aria-controls="{{entry.key}}_abstract">Abstract</a>
+{% endif %}
+<a class="btn btn-primary btn-info btn-xs" data-toggle="collapse" href="#{{entry.key}}_bibtex" aria-expanded="false" aria-controls="{{entry.key}}_bibtex">BibTeX</a>
+{% if entry.pdf %}
+<a class="btn btn-primary btn-info btn-xs" href="/{{entry.pdf}}" target="_blank">pdf</a>
+{% endif %}
+{% if entry.url %}
+<a class="btn btn-primary btn-info btn-xs" href="{{entry.url}}" target="_blank">source</a>
+{% endif %}
+
+<div class="collapse" id="{{entry.key}}_abstract">
+  <h3>Abstract</h3>
+  <p>{{ entry.abstract }}</p>
+</div>
+
+<div class="collapse" id="{{entry.key}}_bibtex">
+  <h3>BibTeX</h3>
+  <pre>{{ entry.bibtex }}</pre>
+</div>
