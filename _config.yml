@@ -27,3 +27,28 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 exclude: ['README.md', 'LICENSE']
+
+gems:
+  - 'jekyll/scholar'
+
+scholar:
+  style: springer-basic-author-date-no-et-al
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: ./_bibliography
+  bibliography: lorcancoyle.bib
+  bibliography_template: bibliography
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+
+encoding: utf-8
