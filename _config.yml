@@ -22,14 +22,14 @@ permalink: /:year/:month/:title
 paginate: 10
 
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
 exclude: ['README.md', 'LICENSE']
 
 gems:
   - 'jekyll/scholar'
+
+plugins:
+  - 'jekyll-paginate'
 
 scholar:
   style: springer-basic-author-date-no-et-al
