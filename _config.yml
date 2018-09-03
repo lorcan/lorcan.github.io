@@ -25,10 +25,8 @@ highlighter: pygments
 
 exclude: ['README.md', 'LICENSE']
 
-gems:
-  - 'jekyll/scholar'
-
 plugins:
+  - 'jekyll/scholar'
   - 'jekyll-paginate'
 
 scholar:
