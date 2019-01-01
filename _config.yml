@@ -1,6 +1,7 @@
 # Jekyll configuration
 
 name: Lorcan Coyle's Home on Tinterweb
+title: Lorcan Coyle's Home on Tinterweb
 description: Lorcan Coyle
 
 # url is currently only used only for the RSS feed in feed.xml
