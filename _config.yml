@@ -17,7 +17,7 @@ baseurl: ''
 github: 'lorcan/lorcan.github.io'
 
 # Set this to your UA-# value, or '' to disable the block completely
-gaaccount: 'UA-1808846-1'
+gaaccount: ''
 
 permalink: /:year/:month/:title
 paginate: 10
