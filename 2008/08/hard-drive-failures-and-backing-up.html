@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lorcan Coyle's Home on Tinterweb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/theme.css" rel="stylesheet">
+  <link href="/css/egonav.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Lorcan Coyle's Home on Tinterweb</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/research">Research</a></li>
+                    <li class="active"><a href="/bibliography.html">Bibliography</a></li>
+                    <li class="active"><a href="/books.html">What I'm reading</a></li>
+                    <li class="active"><a href="http://github.com/lorcan">Github</a></li>
+                    <li class="active"><a href="http://ie.linkedin.com/in/lorcancoyle/">LinkedIn</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+  <div class="row">
+    <div class="article">
+      <div class="well">
+        <h1><a href="/2008/08/hard-drive-failures-and-backing-up">Aug 26, 2008 - Hard Drive Failures and Backing Up</a></h1>
+        <div class="post-content">
+          <p>I had a hard drive failure two weeks ago. Luckily almost everything on the system was fully backed-up so it wasn’t too much of a pain. I had used <a href="http://www.cis.upenn.edu/~bcpierce/unison/docs.html">unison</a> to backup my home directory and the <a href="http://subclipse.tigris.org/">subclipse eclipse plugin</a> to backup my eclipse workspace. The data that were lost (and ultimately mostly salvaged) were the websites on my system, the contents of my mysql databases, as well as data stored in other user accounts on my machine (although I don’t take responsibility for these data). I used dd_recover to salvage data from the broken drive and wrote up a <a href="/wiki/public/recoveringfromharddrivefailure">wiki page on the process</a> I used. The process was somewhat successful and most of the important data was salvageable.</p>
+
+<p>My experiences support the rule that prevention is better than cure. So, with this in mind I’ve set up a page outlining <a href="/wiki/public/backuppolicies">my current backup policies</a> using rsync, unison, subversion, etc. This page will be grown over the coming weeks with backup information I am using to ensure that my websites and databases are not lost in future. In the spirit of openness I’d like people to take a look at my setup and poke holes in it or make suggestions for improvement. Feel free to reuse my scripts to build your own backup scripts as I have done from others (e.g., <a href="http://www.mikerubel.org/computers/rsync_snapshots/index.html#Appendix">Mike Rubel’s rsync scripts</a>). Remember, backup early and backup often, there is no sympathy for anyone who loses data for want of proper backups.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      
+      <a class="btn btn-default" href="/2008/10/what-os-is-your-presidential-candidate-and-other-palin-wonders" class="next">Newer Post</a>
+      
+      
+      <a class="btn btn-default" href="/2008/07/playing-with-chumby" class="previous">Older Post</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2021 Lorcan Coyle's Home on Tinterweb.
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+

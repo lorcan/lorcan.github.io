@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lorcan Coyle's Home on Tinterweb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/theme.css" rel="stylesheet">
+  <link href="/css/egonav.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Lorcan Coyle's Home on Tinterweb</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/research">Research</a></li>
+                    <li class="active"><a href="/bibliography.html">Bibliography</a></li>
+                    <li class="active"><a href="/books.html">What I'm reading</a></li>
+                    <li class="active"><a href="http://github.com/lorcan">Github</a></li>
+                    <li class="active"><a href="http://ie.linkedin.com/in/lorcancoyle/">LinkedIn</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+  Deirdre Dalton prototyped a pool trainer as <href="http://www.odcsss.ie/content/learn-play-minnesota-fats-augmented-reality-pool-hall">her ODCSSS project</a> in summer of 2009 under the supervision of Lorcan Coyle. The aim of the project was to analyse the game of pool with the view to implementing some simple instructions to help tutor or teach a player.
+
+A camera and sensor were used to take in information from the pool table. The camera was mounted directly above the pool table to capture ball colour and position. A <href="http://shimmer-research.com/wordpress/?page_id=20">SHIMMER</a>, (Sensing Health with Intelligence, Modularity, Mobility, and Experimental Reusability) developed by Intel, was strapped to the base of the cue. Each SHIMMER contains a MicroSD - card slot, a rechargeable lithium-polymer battery, a 3-Axis accelerometer (1.5 6G) and a 3-Axis gyroscope (500 o/s). The accelerometer was of particular interest to this project as it was designed to react to very small changes in movement. It relayed the movements of the cue and was used to identify the strength of each shot.
+
+<img src="/files/shimmeroncue.jpg" alt="The Shimmer is attached to the cue handle"/>
+
+A shot appeared as a large spike in the accelerometer data. The magnitude of this spike was calculated, and a strong correlation between the distance the ball travelled following this shot and the acceleration was determined. After much experimenting, a general equation was extracted which can determine how far the ball will travel, the moment it is struck by the cue.
+
+<img src="/files/AccelerationDistanceGraph.png" alt="This graph shows the correlation between peak-to-trough acceleration and distance that the ball travelled"/>
+
+Using this results it is possible to identify if a player is striking the ball with enough force to travel a certain distance, e.g., to pot a ball or roll up to a cushion for a safety shot. The work presented here is a strong starting point for future experimentation and analysis with a view to fully instrumenting a pool hall and providing teaching aids to a player to improve his/her game.
+
+<h1>Further Information</h1>
+<!--Pictured below is Deirdre being presented with her certificate of completion on the final day in the ODCSSS programme (the certificate was presented by one of the heads of ODCSSS, Dr. Aaron Quigley). Deirdre's final report was published as a UCD technical report and is available for download here. -->There are more <href="http://www.flickr.com/photos/tags/odcsss09/">images from ODCSSS 2009 on Flickr</a>. If you are interested in following up on this work or need further information contact <a href="/research">Lorcan</a>.
+
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2021 Lorcan Coyle's Home on Tinterweb.
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+

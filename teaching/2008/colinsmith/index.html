@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lorcan Coyle's Home on Tinterweb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/theme.css" rel="stylesheet">
+  <link href="/css/egonav.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Lorcan Coyle's Home on Tinterweb</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/research">Research</a></li>
+                    <li class="active"><a href="/bibliography.html">Bibliography</a></li>
+                    <li class="active"><a href="/books.html">What I'm reading</a></li>
+                    <li class="active"><a href="http://github.com/lorcan">Github</a></li>
+                    <li class="active"><a href="http://ie.linkedin.com/in/lorcancoyle/">LinkedIn</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+  <h2>Project Summary</h2>
+The ReFInDer system was a final year project undertaken by Colin Smith under the supervision of <a href="http://lorcancoyle.org">Lorcan Coyle</a>. The aim of the project was to design and implement a memory aid using RFID technology. This memory aid takes the form a lost and found application. The system records data about user's interactions with everyday objects, such as a wallet or phone, and presents the user with this data through a lost and found website.
+<!--break-->
+
+<img src="/files/images/000_0062.JPG"/>
+
+The system involves a mobile component carried by the user which facilitates the recording of data about their interactions with objects. This mobile component incorporates an RFID reader and is designed to be placed inside a bag or pocket with tagged items. These tagged items are uniquely identified by the RFID reader when they come into range. The ReFInDer mobile component also incorporates a <a href="http://www.gumstix.com">Gumstix</a> mini-computer which is responsible for taking in tag read data from the RFID reader. The Gumstix facilitates the wireless transmission of tag read data to a server for storing in a database. Information from this database can be retrieved by the lost and found website. When a user loses something they simply access this website and are presented with information which has been previously recorded by the mobile component. The website represents this data in different ways, for example one takes the form of human readable cues, "You last had your keys at half three, at this time you had your wallet". Different representations of recorded data facilitates a broader range of functionality and and advantages for different types of computer users.
+
+<img src="/files/images/pouchback.preview.JPG"/>
+
+To facilitate user assistance in a situation where a computer is unavailable, the mobile component was designed to incorporate an LCD screen. The LCD screen cycles through data stored by the Gumstix and indicates when the user last had certain items. While not included in the original project specification it was decided to explore alternate ways of recording data about a user's interactions with objects. Using the Bluetooth functionality of the Gumstix it was possible to scan for and identify Bluetooth IDs. It was concluded that Bluetooth could be used to potentially augment the abilities of ReFInDer. Based upon mobile phone Bluetooth IDs the system could identify people the user has come into contact with during the day. Static Bluetooth nodes could be used to represent locations the user has visited such as work or home. By presenting the user with more information about their activities the system is potentially more effective at aiding someone in remembering where they have lost something.
+
+<img src="/files/images/websiteShot.preview.JPG"/>
+
+<h2>Further Information</h2>
+<a href="http://lorcancoyle.org/bibliography/265">Colin's final year project report document is available here</a> and over the course of the year he maintained a <a href="http://colin-4thyearproject.blogspot.com/">blog</a> that contains detailed progress of his project. He also maintained a <a href="https://trac.ucd.ie/wiki/GumstixRFID">wiki</a> with further technical documentation. His work was a continuation of earlier work by Caitlin Lustig on <a href="/teaching/2007/caitlinlustig">Reminding Short-Term Memory Sufferers to Complete Routine Tasks</a>. There are more images from this project in the <a href="http://lorcancoyle.org/category/image-galleries/fourth-year-projects-2008">2008 fourth year project image gallery</a>. If you are interested in following up on this work or need further information contact <a href="/research">Lorcan</a>.
+
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2021 Lorcan Coyle's Home on Tinterweb.
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+

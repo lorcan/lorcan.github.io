@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lorcan Coyle's Home on Tinterweb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/theme.css" rel="stylesheet">
+  <link href="/css/egonav.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Lorcan Coyle's Home on Tinterweb</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/research">Research</a></li>
+                    <li class="active"><a href="/bibliography.html">Bibliography</a></li>
+                    <li class="active"><a href="/books.html">What I'm reading</a></li>
+                    <li class="active"><a href="http://github.com/lorcan">Github</a></li>
+                    <li class="active"><a href="http://ie.linkedin.com/in/lorcancoyle/">LinkedIn</a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container container-left">
+  This page has some summaries of the raw data that was used/generated for our citation analysis research, which led to the following publications
+<ul>
+<li><i><a href="http://www.ict.csiro.au/staff/jill.freyne/">Jill Freyne</a>, <a href="http://lorcancoyle.org/research">Lorcan Coyle</a>, <a href="http://www.csi.ucd.ie/users/barry-smyth">Barry Smyth</a>, <a href="http://www.csi.ucd.ie/users/padraig-cunningham">Pádraig Cunningham</a> (2010). Relative Status of Journal and Conference Publications in Computer Science. Communications of the ACM Vol 53(10). To Appear.</i></li>
+<li><i><a href="http://lorcancoyle.org/research">Lorcan Coyle</a>, <a href="http://www.ict.csiro.au/staff/jill.freyne/">Jill Freyne</a>, <a href="http://www.csi.ucd.ie/users/barry-smyth">Barry Smyth</a>, <a href="http://www.csi.ucd.ie/users/padraig-cunningham">Pádraig Cunningham</a> (2008). <a href="/bibliography/286">A Quantitative Evaluation of the Relative Status of Journal and Conference Publications in Computer Science</a>. Technical report number UCD-CSI-2008-08, University College Dublin, Dublin.</i></li>
+</ul>
+This page was (mostly) automatically generated from our Citation Analysis Scripts (FYI: <a href="/research/citationanalysis-old">the original automatically generated page is here</a>). Our study gathered data from a total of 8764 papers (15 conferences with 3258 papers and 17 journals with 5506 articles).
+
+Please get in contact with the authors if you want more information on this work.
+
+<h1>Correlation between ISI Impact Factor and Google Scholar Impact Factor for Selected Journals</h1>
+There is a strong correlation between citation counts computed from Google Scholar data and comparable data from the ISI Web of Knowledge index, validating the use of our new Google Scholar Impact Factor as an alternative citation-based evaluation metric applicable to both journals and conferences. The Pearson correlation coefficient between the two is 0.86. The table below shows the raw values.
+<table border ="1">
+<caption>ISI and Google Scholar Impact Factors for Selected Journals</caption>
+<tr><th>Category</th><th>Journal Name</th><th>ISI Impact Factor</th><th>GS Impact Factor</th></tr><tr><td>A*
+</td><td>Journal of the ACM</td><td>2.9</td><td>35</td></tr>
+<tr><td>B</td><td>Pattern Analysis Applications</td><td>0.4</td><td>8</td></tr>
+<tr><td>A*</td><td>Transactions on Knowledge and Data Engineering</td><td>2.1</td><td>15</td></tr><tr><td>A
+</td><td>Information Retrieal</td><td>1.7</td><td>9.5</td></tr><tr><td>A*
+</td><td>Artificial Intelligence</td><td>2.3</td><td>22</td></tr><tr><td>B
+</td><td>AI EDAM</td><td>0.4</td><td>5</td></tr><tr><td>A
+</td><td>Computational Intelligence</td><td>1.4</td><td>9</td></tr><tr><td>A*
+</td><td>IEEE Trans. on Pattern Analysis and Machine Intelligence</td><td>4.3</td><td>34</td></tr><tr><td>B
+</td><td>AI Communications</td><td>0.5</td><td>4</td></tr><tr><td>A
+</td><td>AI in Medicine</td><td>1.6</td><td>12</td></tr><tr><td>B
+</td><td>International Journal of Pattern Recognition</td><td>0.5</td><td>4</td></tr><tr><td>A
+</td><td>Decision Support Systems</td><td>1.2</td><td>17.5</td></tr><tr><td>A*
+</td><td>Machine Learning</td><td>2.6</td><td>32.5</td></tr><tr><td>A*
+</td><td>International Journal of Computer Vision</td><td>6</td><td>27</td></tr><tr><td>A
+</td><td>Data and Knowledge Engineering</td><td>1.4</td><td>8</td></tr></table>
+
+<h1><a name="scatterplot"/>Scatterplot of Available Rejection Rates versus Google Scholar Impact Factors</h1>
+Below is a scatter plot of GS impact factor against conference rejection rates for 23 conferences across the 15 conference series we evaluated; note the data points reflect a subset of the full set of conferences, namely those for which we were able to obtain. Reliable rejection rates could not be obtained for all of the conferences for which we had data. <a href="#rejectionrates">More details on the rejection rates we used are below</a>. While our study indicate some correlation between GS impact factor and rejection rates, the related Pearson correlation score of 0.53 was not very convincing and reflects considerable variation when it comes to the relationship between conference rejection rates and a conference paper’s ability to attract citations. There are conferences with similar rejection rates but very different Google Scholar impact factors. There are also conferences with very different rejection rates that still manage to achieve similar GS impact factors. For instance, AAAI achieves a Google Scholar impact factor of 20, with a rejection rate of 65%–75%. Its European counterpart, ECAI the European Conference on Artificial Intelligence, is just as selective but achieves a median GS impact factor of only 7 (see <a href="#regionalbias">the section on regional bias below</a>).
+
+Another example of a lack of correlation between paper acceptance rate and citation count is the 2002 European Conference on Case-Based Reasoning (ECCBR), which had a rejection rate of approximately 0.33 33% and Google Scholar impact factor of 7, achieving a citation rate better than the European Conference on Machine Learning?? 2000 and ECAI 2002, which had twice its rejection rate (see <a href="#openworld">the Section below on open-world versus closed-world bias</a>).
+
+To further test the strength of the correlation between GS impact factor and rejection rate we examined the available data for three conference series that took place between 2000-2003; UAI, ICML, and ECML were the only conferences that occurred and had published rejection rates available in every year of the study. Table 5 outlines the GS impact factors and rejection rates for each year in the study. What is interesting here is there is no significant correlation between rejection rate and GS impact factor. The Pearson score for UAI is was?? only 0.27, for ICML 0.24, and for ECML 0.42. This suggests that, at least for these conferences, the yearly changes in rejection rates had little bearing on expected citation count.
+These results highlight the assumption?? the fact?? that any assumed relationship between conference rejection rates and a conference’s ability to attract citations is at best weak, so other factors play a more critical role when it comes to influencing future citations.
+
+<img src="/files/CitationsScatterplot.png" alt="Scatterplot of Available Rejection Rates versus Google Scholar Impact Factors" width="100%"/>
+
+<table border="1">
+<caption>Scatter Plot Values</caption>
+<tr><th>Conference</th><th>Rejection Rate</th><th>Google Scholar Impact Factor</th></tr>
+<tr><td>UAI 2000</td><td>0.64</td><td>17.00</td></tr>
+<tr><td>UAI 2001</td><td>0.60</td><td>11.00</td></tr>
+<tr><td>UAI 2002</td><td>0.66</td><td>16.00</td></tr>
+<tr><td>UAI 2003</td><td>0.66</td><td>10.00</td></tr>
+<tr><td>ECAI 2002</td><td>0.72</td><td>6.00</td></tr>
+<tr><td>NIPS 2001</td><td>0.70</td><td>13.00</td></tr>
+<tr><td>ECAI 2000</td><td>0.69</td><td>9.00</td></tr>
+<tr><td>NIPS 2003</td><td>0.72</td><td>9.50</td></tr>
+<tr><td>AAAI 2000</td><td>0.67</td><td>24.50</td></tr>
+<tr><td>AAAI 2002</td><td>0.74</td><td>14.00</td></tr>
+<tr><td>ECCV 2002</td><td>0.62</td><td>16.00</td></tr>
+<tr><td>ICML 2001</td><td>0.68</td><td>16.00</td></tr>
+<tr><td>ICML 2000</td><td>0.56</td><td>15.00</td></tr>
+<tr><td>ICML 2003</td><td>0.68</td><td>14.00</td></tr>
+<tr><td>ICML 2002</td><td>0.67</td><td>11.00</td></tr>
+<tr><td>IJCAI 2001</td><td>0.75</td><td>20.00</td></tr>
+<tr><td>IJCAI 2003</td><td>0.79</td><td>15.00</td></tr>
+<tr><td>ECML 2001</td><td>0.62</td><td>10.50</td></tr>
+<tr><td>ECML 2000</td><td>0.57</td><td>6.00</td></tr>
+<tr><td>NIPS 2002</td><td>0.69</td><td>13.00</td></tr>
+<tr><td>ECCBR 2002</td><td>0.30</td><td>7.00</td></tr>
+<tr><td>GECCO 2003</td><td>0.31</td><td>4.00</td></tr>
+<tr><td>ICCBR 2003</td><td>0.45</td><td>4.00</td></tr>
+</table>
+
+<h1><a name="regionalbias">International versus Local Venues</a></h1>
+We found evidence of strong regional bias between similar conferences, with international (mainly U.S.-centric) conferences attracting much higher citation counts that their similarly selective though less-well-cited European counterparts. Both the AAAI and ECAI conferences target the same research area and attract submissions from a similar community of researchers in a way that is equally selective. Yet the U.S.-centric AAAI enjoys an expected citation count (computed from the product of the median citation count and the rejection rate of the conference) more than twice that of ECAI.
+
+<table border="1">
+<caption>Google Scholar Rates for the <a href="http://www.aaai.org/Conferences/conferences.php">AAAI Conference on Artificial Intelligence</a> versus the <a href="http://www.eccai.org/ecai.shtml">European Conference on Artificial Intelligence</a> between 2000-2003</caption>
+	<tr><th>Year</th><th>AAAI</th><th>ECAI</th></tr>
+	<tr><td>2000</td><td>24.5</td><td>9</td></tr>
+	<tr><td>2001</td><td>None</td><td>None</td></tr>
+	<tr><td>2002</td><td>14</td><td>6</td></tr>
+	<tr><td>2003</td><td>None</td><td>None</td></tr>
+</table>
+
+This apparent regional bias is also evident in another pair of related conferences: the International Conference on Machine Learning (ICML) and ECML. Once again, a more U.S.-centric ICML conference series attracts far more citations—twice as many—than a similarly selective Euro-centric ECML conference series. There are several possible explanations: One is that non-European researchers are likely to miss publications at European venues (such as ECAI and ECML), so papers at these conferences pick up references only from European researchers. Another is that a pre-selection process allows researchers to keep their best work for the international conference.
+
+<table border="1">
+<caption>Google Scholar Rates for the International Conference on Machine Learning versus the European Conference on Machine Learning between 2000-2003</caption>
+	<tr><th>Year</th><th>ICML</th><th>ECML</th></tr>
+	<tr><td>2000</td><td>15</td><td>6</td></tr>
+	<tr><td>2001</td><td>16</td><td>10.5</td></tr>
+	<tr><td>2002</td><td>11</td><td>7</td></tr>
+	<tr><td>2003</td><td>14</td><td>5</td></tr>
+</table>
+
+There does not appear to be a case for bias between the International and European Conferences on Case  Based Reasoning, although these conferences are held on alternative years, and in ICCBR was held in Norway in 2003. This table is here only because we have the data to show it.
+
+<table border="1">
+<caption>Google Scholar Rates for the <a href="http://www.iccbr.org/">International Conference on Case Based Reasoning</a> versus the <a href="http://www.eccbr.org/">European Conference on Case Based Reasoning</a> between 2000-2003</caption>
+	<tr><th>Year</th><th>ICCBR</th><th>ECCBR</th></tr>
+	<tr><td>2000</td><td>None</td><td>8</td></tr>
+	<tr><td>2001</td><td>9</td><td>None</td></tr>
+	<tr><td>2002</td><td>None</td><td>7</td></tr>
+	<tr><td>2003</td><td>4</td><td>None</td></tr>
+</table>
+
+<h1><a name="openworld">Open versus Closed World Venues</a></h1>
+The table below shows a breakdown of the GS Impact Factor count of ECCBR (formally known as EWCBR) versus ECAI. The European Conference on Case Based Reasoning (CBR) ranked almost as highly in 2000 and 2002 as the European Conference on AI conference, which has a much higher rejection rate. This suggests that there is some merit in targeting one's own community and publishing in niche conferences rather than the larger conferences with a more general audience. However, there is not enough evidence here to draw strong conclusions.
+<table border="1">
+<caption>Google Scholar Rates for the <a href="http://www.eccbr.org/">European Conference on Case Based Reasoning</a>  versus the <a href="http://www.eccai.org/ecai.shtml">European Conference on Artificial Intelligence</a> between 2000-2003</caption>
+	<tr><th>Year</th><th>ECCBR</th><th>ECAI</th></tr>
+	<tr><td>2000</td><td>8</td><td>9</td></tr>
+	<tr><td>2001</td><td>None</td><td>None</td></tr>
+	<tr><td>2002</td><td>7</td><td>6</td></tr>
+	<tr><td>2003</td><td>None</td><td>None</td></tr>
+</table>
+
+<h1>Google Scholar Impact Factors</h1>
+This table shows a breakdown of the Google Scholar Impact factor that were calculated for each venue in each available year.
+<table border ="1">
+<caption>Google Scholar Impact Factors for each available year</caption>
+<tr><th>Venue</th><th>2000</th><th>2001</th><th>2002</th><th>2003</th><th>Google Scholar Impact Factor</th></tr>
+<tr><td>TKDE</td><td>23</td><td>14</td><td>15</td><td>14</td><td>15</td></tr>
+<tr><td>PE</td><td>9</td><td>11</td><td>9</td><td>5</td><td>8.5</td></tr>
+<tr><td>PAMI</td><td>43</td><td>32</td><td>36</td><td>26</td><td>34</td></tr>
+<tr><td>PAA</td><td>11</td><td>8</td><td>9</td><td>7</td><td>8</td></tr>
+<tr><td>ML</td><td>35.5</td><td>32</td><td>36</td><td>29</td><td>32.5</td></tr>
+<tr><td>JACM</td><td>32.5</td><td>59</td><td>51.5</td><td>24.5</td><td>35</td></tr>
+<tr><td>IR</td><td>15</td><td>8</td><td>6.5</td><td>5</td><td>9.5</td></tr>
+<tr><td>INFFUS</td><td>10</td><td>10.5</td><td>10</td><td>6.5</td><td>9</td></tr>
+<tr><td>IJPRAI</td><td>4</td><td>5.5</td><td>5</td><td>3</td><td>4</td></tr>
+<tr><td>IJCV</td><td>36.5</td><td>13.5</td><td>27</td><td>21</td><td>27</td></tr>
+<tr><td>DSS</td><td>17</td><td>18</td><td>18</td><td>17</td><td>17.5</td></tr>
+<tr><td>DKE</td><td>10</td><td>10.5</td><td>8</td><td>6</td><td>8</td></tr>
+<tr><td>CI</td><td>7.5</td><td>8</td><td>17</td><td></td><td>9</td></tr>
+<tr><td>ARTMED</td><td>15</td><td>9.5</td><td>10</td><td>12.5</td><td>12</td></tr>
+<tr><td>AIEDAM</td><td>5</td><td>4</td><td>6</td><td>3</td><td>5</td></tr>
+<tr><td>AICOM</td><td>1.5</td><td>4</td><td>7.5</td><td>2.5</td><td>4</td></tr>
+<tr><td>AI</td><td>27</td><td>22</td><td>22.5</td><td>17</td><td>22</td></tr>
+<tr><td>UAI</td><td>17</td><td>11</td><td>16</td><td>10</td><td>13</td></tr>
+<tr><td>TREC</td><td>10</td><td>10</td><td>6</td><td>6</td><td>8</td></tr>
+<tr><td>NIPS</td><td>14</td><td>13</td><td>13</td><td>9.5</td><td>12</td></tr>
+<tr><td>IJCAI</td><td></td><td>20</td><td></td><td>15</td><td>17</td></tr>
+<tr><td>ICML</td><td>15</td><td>16</td><td>11</td><td>14</td><td>14</td></tr>
+<tr><td>ICCBR</td><td></td><td>9</td><td></td><td>4</td><td>6</td></tr>
+<tr><td>ICANN</td><td></td><td>3</td><td>3</td><td>2</td><td>3</td></tr>
+<tr><td>GECCO</td><td>7</td><td></td><td>6</td><td>4</td><td>5</td></tr>
+<tr><td>ECCBR</td><td>8</td><td></td><td>7</td><td></td><td>8</td></tr>
+<tr><td>ECML</td><td>6</td><td>10.5</td><td>7</td><td>5</td><td>7</td></tr>
+<tr><td>ECCV</td><td>11.5</td><td></td><td>16</td><td></td><td>13.5</td></tr>
+<tr><td>ECAI</td><td>9</td><td></td><td>6</td><td></td><td>7</td></tr>
+<tr><td>COLING</td><td>10</td><td></td><td>8</td><td></td><td>9</td></tr>
+<tr><td>AH</td><td>19.5</td><td></td><td>16</td><td></td><td>17</td></tr>
+<tr><td>AAAI</td><td>24.5</td><td></td><td>14</td><td></td><td>20</td></tr>
+</table>
+
+<h1><a name="rejectionrate"/>Table of Available Acceptance Rates</h1>
+These are the available Acceptance rates and their sources. These acceptance rates were used to generate the <a href="#scatterplot">scatterplot above</a>. <i>The rejection rate is calculated as 100% - acceptance rate</i>. If you have further acceptance rates please send them to <a href="/contact">us</a> and we will add new points to our Scatterplot.
+
+<table border="1">
+<caption>Table of available acceptance rates and the source of each value</caption>
+<tr><th>Conference</th><th>Acceptance Rate</th><th>Number Of Submissions</th><th>Number of Accepted Papers</th><th>Notes</th><th>Source</th></tr>
+<tr><td>UAI 2000</td><td>0.36</td><td>84.0</td><td>30</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#UAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>UAI 2001</td><td>0.4</td><td>84.0</td><td>0</td><td>no figures for the number of accepted papers quoted</td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#UAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>UAI 2002</td><td>0.34</td><td>192.0</td><td>66</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#UAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>UAI 2003</td><td>0.336</td><td>229.0</td><td>77</td><td>25 papers accepted for oral presentation (10.9% acceptance rate) & 52 accepted for poster presentation</td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#UAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ECAI 2002</td><td>0.277</td><td>505.0</td><td>140</td><td></td><td>from Pádraig Cunningham</td></tr>
+<tr><td>NIPS 2001</td><td>0.302</td><td>650.0</td><td>196</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#NIPS'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ECAI 2000</td><td>0.314</td><td>443.0</td><td>139</td><td></td><td>from Pádraig Cunningham</td></tr>
+<tr><td>NIPS 2003</td><td>0.276</td><td>717.0</td><td>198</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#NIPS'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>AAAI 2000</td><td>0.332</td><td>431.0</td><td>143</td><td></td><td><a href='http://www.aaai.org/Conferences/AAAI/aaai.php'>AAAI Website</a></td></tr>
+<tr><td>AAAI 2002</td><td>0.258</td><td>469.0</td><td>121</td><td></td><td><a href='http://www.aaai.org/Conferences/AAAI/aaai.php'>AAAI Website</a></td></tr>
+<tr><td>ECCV 2002</td><td>0.379</td><td>600.0</td><td>226</td><td>45 papers accepted for oral presentation (7.5% acceptance rate) & 181 accepted for poster presentation (30.2% poster acceptance rate)</td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#ECCV'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ICML 2001</td><td>0.321</td><td>249.0</td><td>80</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#ICML'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ICML 2000</td><td>0.443</td><td>349.0</td><td>151</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#ICML'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ICML 2003</td><td>0.321</td><td>371.0</td><td>119</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#ICML'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ICML 2002</td><td>0.33</td><td>261.0</td><td>86</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#ICML'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>IJCAI 2001</td><td>0.25</td><td>796.0</td><td>197</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#IJCAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>IJCAI 2003</td><td>0.207</td><td>913.0</td><td>189</td><td>189(regular= 20.7%) **63(poster)**</td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#IJCAI'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ECML 2001</td><td>0.375</td><td>240.0</td><td>50</td><td>The acceptance rate quoted here is calculated on pkdd/ecml where 90 papers were submitted. However our database only contains 50 papers. This acceptance rate is therefore an approximation (90 from 240) from the combined figures for ECML/PKDD</td><td> from Pádraig Cunningham
+</td></tr>
+<tr><td>ECML 2000</td><td>0.43</td><td>100.0</td><td>43</td><td>43 papers accepted (20 + 23) from 100</td><td> from Pádraig Cunningham</td></tr>
+<tr><td>NIPS 2002</td><td>0.311</td><td>710.0</td><td>221</td><td></td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#NIPS'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ECCBR 2002</td><td>0.703</td><td>64.0</td><td>45</td><td>64 submissions (18+5+14+8) accepted</td><td>from a mail from Susan Craw to Pádraig Cunningham</td></tr>
+<tr><td>GECCO 2003</td><td>0.686</td><td>417.0</td><td>286</td><td>194 papers accepted for oral presentation (46.5% acceptance rate) & 92 accepted for poster presentation</td><td><a href='http://www.adaptivebox.net/CILib/CICON_stat.html#GECCO'>The Computational Intelligence Repository's Conference Acceptance Ratio Statistics</a></td></tr>
+<tr><td>ICCBR 2003</td><td>0.554</td><td>92.0</td><td>51</td><td>51(19+32) from 92</td><td>from Pádraig Cunningham
+</td></tr></table>
+
+<h1>Paper conference/type Breakdown</h1>
+This table shows a breakdown of how many papers of each type are in the database for each conference. If you have more up-to-date values for any of these conferences <a href="/contact">we</a> will update the table. We used only full papers in our calculations, when that information was available.
+<table border="1">
+<caption>Breakdown of the numbers of different types of paper for each conference, where available</caption>
+	<tr><th>Conference</th><th>Type</th><th>Number Of Papers</th><th>Google Scholar Impact Factor</th></tr>
+	<tr><td>AAAI 2000</td><td>Application Paper</td><td>18</td><td>9</td></tr>
+	<tr><td>AAAI 2000</td><td>DC Paper</td><td>10</td><td>0</td></tr>
+	<tr><td>AAAI 2000</td><td>Demo Paper</td><td>12</td><td>2.5</td></tr>
+	<tr><td>AAAI 2000</td><td>Invited Paper</td><td>8</td><td>4</td></tr>
+	<tr><td>AAAI 2000</td><td>Robot Competition and Exibition Paper</td><td>1</td><td>None</td></tr>
+	<tr><td>AAAI 2000</td><td>Student Abstract Paper</td><td>36</td><td>0</td></tr>
+	<tr><td>AAAI 2000</td><td>Technical Paper</td><td>143</td><td>24.5</td></tr>
+	<tr><td>AAAI 2002</td><td>Application Paper</td><td>18</td><td>10.5</td></tr>
+	<tr><td>AAAI 2002</td><td>DC Paper</td><td>13</td><td>0</td></tr>
+	<tr><td>AAAI 2002</td><td>Demo Paper</td><td>10</td><td>0</td></tr>
+	<tr><td>AAAI 2002</td><td>Invited Paper</td><td>2</td><td>0</td></tr>
+	<tr><td>AAAI 2002</td><td>Student Abstract Paper</td><td>17</td><td>4</td></tr>
+	<tr><td>AAAI 2002</td><td>Technical Paper</td><td>120</td><td>14</td></tr>
+	<tr><td>AH 2000</td><td>DC Paper</td><td>4</td><td>3.5</td></tr>
+	<tr><td>AH 2000</td><td>Full Paper</td><td>22</td><td>19.5</td></tr>
+	<tr><td>AH 2000</td><td>Invited Paper</td><td>1</td><td>3</td></tr>
+	<tr><td>AH 2000</td><td>Short Paper</td><td>31</td><td>5</td></tr>
+	<tr><td>AH 2002</td><td>Full Paper</td><td>33</td><td>16</td></tr>
+	<tr><td>AH 2002</td><td>Invited Paper</td><td>3</td><td>33</td></tr>
+	<tr><td>AH 2002</td><td>Poster Paper</td><td>35</td><td>3</td></tr>
+	<tr><td>AH 2002</td><td>Short Paper</td><td>23</td><td>3</td></tr>
+	<tr><td>COLING 2000</td><td>Not Specified</td><td>174</td><td>10</td></tr>
+	<tr><td>COLING 2002</td><td>Not Specified</td><td>198</td><td>8</td></tr>
+	<tr><td>ECAI 2000</td><td>Not Specified</td><td>141</td><td>9</td></tr>
+	<tr><td>ECAI 2002</td><td>Not Specified</td><td>140</td><td>6</td></tr>
+	<tr><td>ECCV 2000</td><td>Not Specified</td><td>116</td><td>11.5</td></tr>
+	<tr><td>ECCV 2002</td><td>Not Specified</td><td>226</td><td>16</td></tr>
+	<tr><td>ECML 2000</td><td>Full Paper</td><td>43</td><td>6</td></tr>
+	<tr><td>ECML 2000</td><td>Invited Paper</td><td>2</td><td>18</td></tr>
+	<tr><td>ECML 2001</td><td>Full Paper</td><td>50</td><td>10.5</td></tr>
+	<tr><td>ECML 2001</td><td>Invited Paper</td><td>5</td><td>2</td></tr>
+	<tr><td>ECML 2002</td><td>Full Paper</td><td>41</td><td>7</td></tr>
+	<tr><td>ECML 2002</td><td>Invited Paper</td><td>4</td><td>19</td></tr>
+	<tr><td>ECML 2003</td><td>Full Paper</td><td>40</td><td>5</td></tr>
+	<tr><td>ECML 2003</td><td>Invited Paper</td><td>4</td><td>1</td></tr>
+	<tr><td>ECCBR 2000</td><td>Application Paper</td><td>16</td><td>6.5</td></tr>
+	<tr><td>ECCBR 2000</td><td>Invited Paper</td><td>2</td><td>4</td></tr>
+	<tr><td>ECCBR 2000</td><td>Research Paper</td><td>26</td><td>11.5</td></tr>
+	<tr><td>ECCBR 2002</td><td>Application Paper</td><td>14</td><td>4.5</td></tr>
+	<tr><td>ECCBR 2002</td><td>Invited Paper</td><td>2</td><td>8.5</td></tr>
+	<tr><td>ECCBR 2002</td><td>Research Paper</td><td>31</td><td>8</td></tr>
+	<tr><td>GECCO 2000</td><td>Full Paper</td><td>119</td><td>9</td></tr>
+	<tr><td>GECCO 2000</td><td>Poster Paper</td><td>63</td><td>3</td></tr>
+	<tr><td>GECCO 2002</td><td>Not Specified</td><td>230</td><td>6</td></tr>
+	<tr><td>GECCO 2003</td><td>Full Paper</td><td>200</td><td>5</td></tr>
+	<tr><td>GECCO 2003</td><td>Poster Paper</td><td>85</td><td>2</td></tr>
+	<tr><td>ICANN 2001</td><td>Invited Paper</td><td>3</td><td>6.5</td></tr>
+	<tr><td>ICANN 2001</td><td>Not Specified</td><td>171</td><td>3</td></tr>
+	<tr><td>ICANN 2002</td><td>Not Specified</td><td>221</td><td>3</td></tr>
+	<tr><td>ICANN 2003</td><td>Not Specified</td><td>140</td><td>2</td></tr>
+	<tr><td>ICCBR 2001</td><td>Application Paper</td><td>14</td><td>4.5</td></tr>
+	<tr><td>ICCBR 2001</td><td>Invited Paper</td><td>3</td><td>14</td></tr>
+	<tr><td>ICCBR 2001</td><td>Research Paper</td><td>36</td><td>13.5</td></tr>
+	<tr><td>ICCBR 2003</td><td>Full Paper</td><td>51</td><td>4</td></tr>
+	<tr><td>ICCBR 2003</td><td>Invited Paper</td><td>3</td><td>0.5</td></tr>
+	<tr><td>ICML 2000</td><td>Not Specified</td><td>150</td><td>15</td></tr>
+	<tr><td>ICML 2001</td><td>Not Specified</td><td>80</td><td>16</td></tr>
+	<tr><td>ICML 2002</td><td>Not Specified</td><td>87</td><td>11</td></tr>
+	<tr><td>ICML 2003</td><td>Not Specified</td><td>116</td><td>14</td></tr>
+	<tr><td>IJCAI 2001</td><td>Invited Paper</td><td>3</td><td>5</td></tr>
+	<tr><td>IJCAI 2001</td><td>Not Specified</td><td>196</td><td>20</td></tr>
+	<tr><td>IJCAI 2003</td><td>Computers and Thought Award Paper</td><td>1</td><td>29</td></tr>
+	<tr><td>IJCAI 2003</td><td>Full Paper</td><td>189</td><td>15</td></tr>
+	<tr><td>IJCAI 2003</td><td>Intelligent Systems Demonstrations</td><td>9</td><td>0</td></tr>
+	<tr><td>IJCAI 2003</td><td>Invited Speakers</td><td>10</td><td>16.5</td></tr>
+	<tr><td>IJCAI 2003</td><td>Poster Paper</td><td>87</td><td>3</td></tr>
+	<tr><td>NIPS 2000</td><td>Not Specified</td><td>153</td><td>14</td></tr>
+	<tr><td>NIPS 2001</td><td>Not Specified</td><td>196</td><td>13</td></tr>
+	<tr><td>NIPS 2002</td><td>Not Specified</td><td>207</td><td>13</td></tr>
+	<tr><td>NIPS 2003</td><td>Not Specified</td><td>198</td><td>9.5</td></tr>
+	<tr><td>TREC 2000</td><td>Not Specified</td><td>74</td><td>10</td></tr>
+	<tr><td>TREC 2001</td><td>Not Specified</td><td>84</td><td>10</td></tr>
+	<tr><td>TREC 2002</td><td>Not Specified</td><td>100</td><td>6</td></tr>
+	<tr><td>TREC 2003</td><td>Not Specified</td><td>100</td><td>6</td></tr>
+	<tr><td>UAI 2000</td><td>Not Specified</td><td>75</td><td>17</td></tr>
+	<tr><td>UAI 2001</td><td>Not Specified</td><td>71</td><td>11</td></tr>
+	<tr><td>UAI 2002</td><td>Not Specified</td><td>69</td><td>16</td></tr>
+	<tr><td>UAI 2003</td><td>Not Specified</td><td>77</td><td>10</td></tr>
+</table>
+<h1>Acknowledgements</h1>
+This work has been was supported by Science Foundation Ireland through grants 07/CE/I1147, 04/RPI/1544, 03/CE2/I303 1, and 05/IN.1/I24.
+
+We gathered and generated data using <a href="http://www.python.org/">Python</a> scripts, taking the details of accepted papers from <a href="http://www.informatik.uni-trier.de/~ley/db/">DBLP</a> and citation figures from <a href="http://scholar.google.com">Google Scholar</a>. <a href="http://www.mathworks.com/products/matlab/">Matlab</a> was used to generate the scatterplots.
+
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2021 Lorcan Coyle's Home on Tinterweb.
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
