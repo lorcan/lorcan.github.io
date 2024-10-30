@@ -1,0 +1,14 @@
+.egonav p {
+  margin-bottom: 1.625em;
+  color: #bbb; }
+.egonav a {
+  color: #e4741f; }
+.egonav h1, .egonav h2 {
+  color: white;
+  font-weight: bold; }
+.egonav h1 {
+  text-align: center; }
+.egonav h2 {
+  margin: 0 0 .8125em; }
+.egonav .egonav-image {
+  width: 100%; }
