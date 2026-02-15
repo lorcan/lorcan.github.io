@@ -4,8 +4,8 @@ name: Lorcan Coyle's Home on Tinterweb
 title: Lorcan Coyle's Home on Tinterweb
 description: Lorcan Coyle
 
-# url is currently only used only for the RSS feed in feed.xml
-url: http://lorcan.github.io
+# Site URL (used for RSS feed, canonical URLs, and absolute links)
+url: https://lorcan.github.io
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.

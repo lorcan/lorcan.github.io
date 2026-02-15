@@ -9,7 +9,4 @@ gem 'webrick'  # Required for Jekyll 4 serve
 group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-scholar', '~> 7.0'
-  gem 'jekyll-feed'
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-sitemap'
 end

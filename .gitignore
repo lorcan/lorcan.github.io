@@ -1,3 +1,23 @@
 _site/
 _drafts/
 .sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+*.gem
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+
+# Local config
+.claude/
+.ruby-lsp/
+.conductor/
+tmp/
