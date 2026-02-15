@@ -22,7 +22,7 @@ gaaccount: ''
 permalink: /:year/:month/:title
 paginate: 10
 
-highlighter: pygments
+highlighter: rouge
 
 exclude: ['README.md', 'LICENSE']
 
